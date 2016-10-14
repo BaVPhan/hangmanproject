@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project Hangman</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>HANGMAN</h1>
+    <form>
+      Input Word: <input type="text" id="wordEntry" autofocus placeholder="Type a word here"><br>
+      Hint: <input type="text" id="hintEntry" autofocus placeholder="Type hint here"><br>
+      <input type="submit" id="submitInput" value="Submit">
+    </form>
+
+    <div id="wordBox" class="word">
+      <h2>Guess the Word!!</h2>
+      <div class="wordBox"></div>
+      <div id="showHint"></div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
+  <script src="script.js"></script>
+  </body>
+</html>

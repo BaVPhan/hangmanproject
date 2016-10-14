@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+  position: static;
+  margin-left: 300px;
+}
+body {
+  background-image: url("https://boardgamegeek.com/camo/6284d970e8202da0a8a0290f52623829b3d1d77b/687474703a2f2f68616e67746f776e2e776565626c792e636f6d2f75706c6f6164732f372f302f382f362f373038363537302f373537363031312e706e673f323130");
+  background-size: 375px;
+  background-repeat: no-repeat;
+  background-position: 90% -15%;
+  position: fixed;
+  z-index: -1;
+}
