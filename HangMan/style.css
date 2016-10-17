@@ -1,5 +1,10 @@
 html {
   font-family: 'Ruslan Display', cursive;
+  background-image: url("images/field.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100% 75%;
+  position: relative;
 }
 div {
   position: relative;
@@ -11,11 +16,14 @@ h1 {
   font-size: 60px;
   color: red;
 }
+h2 {
+  color: red;
+}
+.guesses {
+  color: red;
+  font-size: 30px;
+}
 body {
-  background-image: url("images/field.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
 }
 #wordBox{
@@ -32,14 +40,14 @@ body {
 }
 #hangTreeImage {
   position: fixed;
-  right: 3px;
-  top: 210px;
+  right: 59px;
+  top: 219px;
   width: 350px;
   height: 700px;
   z-index: -1;
 }
 #hangTreeImage #hangTreePic {
-	opacity: 0.77;
+	opacity: 0.72;
 	z-index: -1;
 }
 .wholePerson {
@@ -51,7 +59,7 @@ body {
   bottom: 180px;
   z-index: 1;
 }
-.headcenter{
+#headcenter{
 	height: 33px;
 	width: 31px;
 	border: solid 2px #000;
@@ -62,7 +70,7 @@ body {
 	background-color: black;
 	z-index: 1;
 }
-.torsocenter {
+#torsocenter {
 	width: 6px;
 	height: 73px;
 	right: 12px;
@@ -71,7 +79,7 @@ body {
 	background-color: red;
 	z-indez: -1;
 }
-.armright {
+#armright {
 	position: absolute;
 	width: 3px;
 	height: 30px;
@@ -82,7 +90,7 @@ body {
 	background-color: red;
 
 }
-.armleft {
+#armleft {
 	position: absolute;
 	width: 3px;
 	height: 30px;
@@ -94,7 +102,7 @@ body {
 	background-color: red;
 }
 
-.legleft{
+#legleft{
 	position: absolute;
 	width: 3px;
 	height: 40px;
@@ -105,7 +113,7 @@ body {
 	transform: rotate(-169deg);
 	background-color: red;
 }
-.legright {
+#legright {
 	position: absolute;
 	width: 3px;
 	height: 40px;

@@ -25,27 +25,29 @@
     <div id="hangTreeImage">
       <img id="hangTreePic" src="images/hangmantree.png" alt="hangman tree">
       <div class="wholePerson" id="wholePerson">
-        <div class="headcenter">
+        <div id="headcenter">
         </div>
-        <div class="torsocenter">
+        <div id="torsocenter">
         </div>
-        <div class="armleft">
+        <div id="armleft">
         </div>
-        <div class="armright">
+        <div id="armright">
         </div>
-        <div class="legleft">
+        <div id="legleft">
         </div>
-        <div class="legright">
+        <div id="legright">
         </div>
       </div>
     </div>
 
     <div class="guess" id="guessBox">
-      <input type="text" id="guessEntry" autofocus placeholder="Input a letter!">
+      <input type="text" id="guessEntry" maxlength="1" autofocus placeholder="Input a letter!">
       <input type="submit" id="submitGuess" value="Guess">
     </div>
     <br>
-    <br>
+    <div class="guesses" id="showGuesses">
+      Your guesses:<div id="displayGuesses"></div>
+    </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
   <script src="script.js"></script>
   </body>
