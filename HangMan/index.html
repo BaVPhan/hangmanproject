@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Project Hangman</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
   </head>
   <body>
     <h1>HANGMAN</h1>
@@ -13,11 +14,38 @@
       <input type="submit" id="submitInput" value="Submit">
     </form>
 
-    <div id="wordBox" class="word">
+    <div class="word" id="wordBox" >
       <h2>Guess the Word!!</h2>
-      <div class="wordBox"></div>
+      <div id="showWord"></div>
+      <br>
+      <br>
       <div id="showHint"></div>
     </div>
+
+    <div id="hangTreeImage">
+      <img id="hangTreePic" src="images/hangmantree.png" alt="hangman tree">
+      <div class="wholePerson" id="wholePerson">
+        <div class="headcenter">
+        </div>
+        <div class="torsocenter">
+        </div>
+        <div class="armleft">
+        </div>
+        <div class="armright">
+        </div>
+        <div class="legleft">
+        </div>
+        <div class="legright">
+        </div>
+      </div>
+    </div>
+
+    <div class="guess" id="guessBox">
+      <input type="text" id="guessEntry" autofocus placeholder="Input a letter!">
+      <input type="submit" id="submitGuess" value="Guess">
+    </div>
+    <br>
+    <br>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
   <script src="script.js"></script>
   </body>

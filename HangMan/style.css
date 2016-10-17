@@ -1,13 +1,117 @@
+html {
+  font-family: 'Ruslan Display', cursive;
+}
+div {
+  position: relative;
+}
 h1 {
   text-align: center;
   position: static;
   margin-left: 300px;
+  font-size: 60px;
+  color: red;
 }
 body {
-  background-image: url("https://boardgamegeek.com/camo/6284d970e8202da0a8a0290f52623829b3d1d77b/687474703a2f2f68616e67746f776e2e776565626c792e636f6d2f75706c6f6164732f372f302f382f362f373038363537302f373537363031312e706e673f323130");
-  background-size: 375px;
+  background-image: url("images/field.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 90% -15%;
+  background-position: center center;
+  position: relative;
+}
+#wordBox{
+
+}
+#guessBox{
+
+}
+#showWord {
+  font-size: 50px;
+}
+#showHint {
+  font-size: 25px;
+}
+#hangTreeImage {
   position: fixed;
+  right: 3px;
+  top: 210px;
+  width: 350px;
+  height: 700px;
   z-index: -1;
+}
+#hangTreeImage #hangTreePic {
+	opacity: 0.77;
+	z-index: -1;
+}
+.wholePerson {
+  position: relative;
+  margin: 0 auto;
+  width: 150px;
+  height: 310px;
+  right: 10px;
+  bottom: 180px;
+  z-index: 1;
+}
+.headcenter{
+	height: 33px;
+	width: 31px;
+	border: solid 2px #000;
+	border-radius: 50%;
+	opacity: 1;
+	left: 6px;
+	top: 6px;
+	background-color: black;
+	z-index: 1;
+}
+.torsocenter {
+	width: 6px;
+	height: 73px;
+	right: 12px;
+	background: #000;
+	margin-left: 45px;
+	background-color: red;
+	z-indez: -1;
+}
+.armright {
+	position: absolute;
+	width: 3px;
+	height: 30px;
+	background: #000;
+	top: calc(48% - 103px);
+	left: calc(50% - 32px);
+	transform: rotate(155deg);
+	background-color: red;
+
+}
+.armleft {
+	position: absolute;
+	width: 3px;
+	height: 30px;
+	background: #000;
+	left: calc(50% - 42px);
+	top: calc(48% - 131px);
+	transform-origin: bottom;
+	transform: rotate(-155deg);
+	background-color: red;
+}
+
+.legleft{
+	position: absolute;
+	width: 3px;
+	height: 40px;
+	background: #000;
+	top: 85px;
+	left: calc(50% - 45px);
+	top: calc(50% - 49px);
+	transform: rotate(-169deg);
+	background-color: red;
+}
+.legright {
+	position: absolute;
+	width: 3px;
+	height: 40px;
+	background: #000;
+	left: calc(50% - 35px);
+	top: calc(50% - 49px);
+	transform: rotate(169deg);
+	background-color: red;
 }
