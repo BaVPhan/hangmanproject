@@ -13,9 +13,12 @@
       Hint: <input type="text" id="hintEntry" autofocus placeholder="Type hint here"><br>
       <input type="submit" id="submitInput" value="Submit">
     </form>
-    <div class="clock">
-      Timer:<div class="timer"></div>
-    </div>
+    <h5>Timer:</h5>
+    <h4><time>00:00:00</time></h4>
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="clear">Clear</button>
+
     <div class="word" id="wordBox" >
       <h2>Guess the Word!!</h2>
       <div id="showWord"></div>
@@ -43,14 +46,15 @@
     </div>
 
     <div class="guess" id="guessBox">
-      <input type="text" id="guessEntry" maxlength="1" autofocus placeholder="Input a letter!">
+      <input type="text" id="guessEntry" maxlength="1" autofocus placeholder="Type a letter!">
       <input type="submit" id="submitGuess" value="Guess">
     </div>
     <br>
     <div class="guesses" id="showGuesses">
-      Your guesses:<div id="displayGuesses"></div>
+      Your incorrect guesses:<div id="displayGuesses"></div>
     </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
+
   <script src="script.js"></script>
   </body>
 </html>

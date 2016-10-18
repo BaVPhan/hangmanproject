@@ -18,30 +18,28 @@ h1 {
 }
 h2 {
   color: red;
+  padding-left: 360px;
 }
 .guesses {
   color: red;
-  font-size: 30px;
+  font-size: 23px;
 }
 body {
   position: relative;
 }
-#wordBox{
 
-}
-#guessBox{
-
-}
 #showWord {
-  font-size: 50px;
+  font-size: 45px;
+  padding-left: 360px;
 }
 #showHint {
-  font-size: 25px;
+  font-size: 22px;
+  padding-left: 360px;
 }
 #hangTreeImage {
   position: fixed;
-  right: 59px;
-  top: 219px;
+  right: 88px;
+  top: 297px;
   width: 350px;
   height: 700px;
   z-index: -1;
