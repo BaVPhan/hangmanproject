@@ -9,20 +9,18 @@ var mysteryWord = {
   bodyParts: ["#headcenter", "#torsocenter", "#armleft", "#armright", "#legleft", "#legright"]
 }
 
+var start = new Date;
 
-
+setInterval(function() {
+    $('.timer').text((new Date - start) / 1000 + " Seconds");
+}, 1000);
 
 $("#submitInput").on("click", function(evt){
   evt.preventDefault();
   var hintInput = $("#hintEntry").val();
   $("#showHint").html("Hint: " + hintInput);
   $("#hintEntry").val("");
-  $("#headcenter").hide();
-  $("#torsocenter").hide();
-  $("#armleft").hide();
-  $("#armright").hide();
-  $("#legleft").hide();
-  $("#legright").hide();
+  hideAll();
 })
 
 $("#submitInput").on("click", function(evt){
@@ -33,13 +31,12 @@ $("#submitInput").on("click", function(evt){
     mysteryWord.wordUnderscore[i] = " _ ";
     console.log(mysteryWord.wordUnderscore);
     $("#showWord").html(mysteryWord.wordUnderscore);
+    $("#wordEntry").val("");
 })
-$("#wordEntry").val("");
 
 $("#submitGuess").on("click", function(evt){
   evt.preventDefault();
   var guessInput = $("#guessEntry").val();
-  $("#displayGuesses").append(" <b>" + guessInput + "</b>");
   if (mysteryWord.wordArray.includes(guessInput)) {
     for (i=0; i< mysteryWord.wordArray.length; i++) {
       if (mysteryWord.wordArray[i] === guessInput) {
@@ -48,14 +45,26 @@ $("#submitGuess").on("click", function(evt){
         $("#showWord").html(mysteryWord.wordUnderscore);
       }
     }
-  } else {
+  } else if (mysteryWord.counter >= 5) {
+    alert("GAME OVER!");
+  }
+  else {
     mysteryWord.counter += 1;
     console.log(mysteryWord.counter);
     $(mysteryWord.bodyParts[mysteryWord.counter]).show();
-    $("#guessEntry").val("");
+    $("#displayGuesses").append(" <b>" + guessInput + "</b>");
   }
+  $("#guessEntry").val("");
 })
 
+function hideAll (){
+  $("#headcenter").hide();
+  $("#torsocenter").hide();
+  $("#armleft").hide();
+  $("#armright").hide();
+  $("#legleft").hide();
+  $("#legright").hide();
+}
 //function checkGuess() {
 
 //}
